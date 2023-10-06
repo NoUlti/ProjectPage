@@ -15,15 +15,15 @@ html {
     "Nav Footer Footer";
 }
 
-.Header { grid-area: Header; }
+.Header { grid-area: Header; background-coror: blue; }
 
-.Nav { grid-area: Nav; }
+.Nav { grid-area: Nav; background-coror: green; }
 
-.New { grid-area: New; }
+.New { grid-area: New; background-coror: lightblue; }
 
-.Footer { grid-area: Footer; }
+.Footer { grid-area: Footer; background-coror: gray; }
 
-.Main { grid-area: Main; }
+.Main { grid-area: Main; background-coror: red; }
 
 
 a {
