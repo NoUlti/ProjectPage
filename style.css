@@ -1,38 +1,46 @@
 html {
   background-color: #FFF8E7;
   font-family: 	Arial, Verdana, Helvetica;
+  height: 100%;
 }
 
-body { margin: auto; height: 98%; border: 5px solid #CFC8B7; }
-
-div {
-  overflow: hidden;
-  text-overflow: ellipsis;
+body {
+  border: 5px solid #CFC8B7;
+  margin: 0;
+  height: 97,5%;
   padding: 5px;
 }
 
-a {
-  font-size: 18px;
+div.container {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 100%;
+  margin: 0;
 }
 
-.container {  display: grid;
-  grid-template-columns: 200px 1fr 100px;
-  grid-template-rows: 100px 1fr 80px;
+.container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 100px 1fr 1fr 80px;
   gap: 5px 5px;
   grid-auto-flow: row;
   grid-template-areas:
-    "Header Header Header"
-    "Nav Main New"
-    "Nav Footer Footer";
-  height: 98.5%;
+    "Header Header"
+    "Nav Main"
+    "New Main"
+    "New Footer";
 }
 
-.Header { grid-area: Header; border: 2px solid #DFD8C7; }
+.Header { grid-area: Header; border: 2px solid #DFD8C7; padding: 5px; }
 
-.Nav { grid-area: Nav; border: 2px solid #DFD8C7; }
+.Nav { grid-area: Nav; border: 2px solid #DFD8C7; padding: 5px; overflow: auto; }
 
-.New { grid-area: New; border: 2px solid #DFD8C7; }
+.New { grid-area: New; border: 2px solid #DFD8C7; padding: 5px; overflow: auto; }
 
-.Footer { grid-area: Footer; border: 2px solid #DFD8C7; }
+.Footer { grid-area: Footer; border: 2px solid #DFD8C7; padding: 5px; }
 
-.Main { grid-area: Main; border: 2px solid #DFD8C7; }
+.Main { grid-area: Main; border: 2px solid #DFD8C7; padding: 5px; overflow: auto; }
+
+a, p {
+  font-size: 18px;
+}
