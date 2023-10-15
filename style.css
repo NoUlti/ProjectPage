@@ -44,3 +44,7 @@ div.container {
 a, p {
   font-size: 18px;
 }
+
+p.hint {
+  color: #DFD8C7;
+}
